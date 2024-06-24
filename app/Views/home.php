@@ -17,7 +17,13 @@
                             <div class="card border-rounded" style="width: 18rem;">
                                 <div class="header-card-livro">
                                     <div class="img-card-header">
-                                        <img src="<?= site_url().'assets/img/livros.jpeg' ?>" class="card-img-top">
+                                        <?php if(file_exists(WRITEPATH.'uploads/'.$livro['url_imagem'])): ?>
+                                            <?php $img_existe = 1; ?>
+                                            <img src="<?= site_url().'uploads/'.$livro['url_imagem'] ?>" class="img-livro card-img-top">
+                                        <?php else: ?>
+                                            <?php $img_existe = 2; ?>
+                                            <img src="<?= site_url().'assets/img/livros.jpeg' ?>" class="img-livro card-img-top">
+                                        <?php endif ?>
                                     </div>
                                     <div class="bl-favorito">
                                         <?php 
@@ -58,10 +64,12 @@
                                     <div class="mh-20">
                                         <h5 class="card-title desc-livro"><?= $livro['titulo'] ?></h5>
                                     </div>
-                                    <p class="card-text desc-livro"><?= $livro['descricao'] ?></p>
+                                    <div class="mh-20">
+                                        <p class="card-text desc-livro"><?= $livro['descricao'] ?></p>
+                                    </div>
                                     <div class="bl-options">
                                         <div class="me-3">
-                                            <a href="javascript:" class="btn-option-livro text-primary mr-4"><i class="fas fa-eye"></i></a>
+                                            <a href="javascript:" onclick="detalhesLivro(<?= $livro['id'] ?>, <?= $img_existe ?>)" class="btn-option-livro text-primary mr-4"><i class="fas fa-eye"></i></a>
                                         </div>
                                         <div>
                                             <a href="javascript:" onclick="removeLivro(<?= $livro['id'] ?>, '<?= $livro['titulo'] ?>')" class="btn-option-livro text-danger"><i class="fas fa-trash"></i></a>
@@ -87,4 +95,5 @@
     </button>
 <?php echo view('modal_adicionar_livro') ?>
 <?php echo view('modal_remover_livro') ?>
+<?php echo view('modal_detalhes_livro') ?>
 <?= $this->endSection() ?>

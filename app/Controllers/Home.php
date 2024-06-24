@@ -135,7 +135,6 @@ class Home extends BaseController
         }
     }
 
-
     public function update_favorito()
     {
         try {
@@ -197,6 +196,30 @@ class Home extends BaseController
                 'msg'   => $e->getMessage()
             ];
 
+        }
+
+        return $this->response->setJSON($response);
+    }
+
+    public function detalhes($id) 
+    {
+        try {
+
+            // Verifiando se o livro informado é valido
+            $livro = $this->livroModel->find($id);
+
+            if(!$livro) {
+                throw new Exception('Livro informado é inválido');
+            }
+
+            $response = $livro;
+
+        } catch(Exception $e) {
+
+            $response = [
+                'error' => true,
+                'msg'   => $e->getMessage()
+            ];
         }
 
         return $this->response->setJSON($response);

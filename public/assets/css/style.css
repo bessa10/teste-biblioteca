@@ -109,7 +109,7 @@ body {
 }
 
 .btn-favorito:hover {
-    color: #fff
+    color:crimson
 }
 
 .btn-add-livro {
@@ -146,6 +146,10 @@ body {
 
 .btn-option-livro {
     font-size: 22px;
+}
+
+.img-livro {
+    height: 200px;
 }
 
 @media (min-width: 992px) {
