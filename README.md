@@ -18,4 +18,10 @@ Executar os seguintes comandos na raiz do projeto:
 
 - Alterar as configurações de acesso no arquivo .env
 
+database.default.hostname
+database.default.database
+database.default.username
+database.default.password
+database.default.DBDriver
+
 - O arquivo de dump do banco de dados está na basta dump_database na raíz do projeto
