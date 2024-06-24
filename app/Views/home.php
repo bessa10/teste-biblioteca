@@ -15,7 +15,7 @@
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
                     <?php foreach($livros as $livro): ?>
                         <div class="col d-flex justify-content-md-center">
-                            <div class="card border-rounded" style="width: 18rem;">
+                            <div class="card border-rounded shadow" style="width: 18rem;">
                                 <div class="header-card-livro">
                                     <div class="img-card-header">
                                         <?php if(file_exists(WRITEPATH.'uploads/'.$livro['url_imagem'])): ?>

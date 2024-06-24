@@ -10,15 +10,15 @@
                     <div class="row">
                         <div class="form-group mb-2 col-12 text-center">
                             <label class="mb-1"><strong>Título:</strong></label>
-                            <input type="text" class="form-control text-center" name="titulo" id="titulo">
+                            <input type="text" class="form-control text-center shadow" name="titulo" id="titulo">
                         </div>
                         <div class="form-group mb-2 col-12 text-center">
                             <label class="mb-1"><strong>Descrição:</strong></label>
-                            <input type="text" class="form-control text-center" name="descricao" id="descricao">
+                            <input type="text" class="form-control text-center shadow" name="descricao" id="descricao">
                         </div>
                         <div class="form-group mb-2 col-12 text-center">
                             <label class="mb-1"><strong>Imagem:</strong></label>
-                            <input type="file" class="form-control" name="userfile" id="userfile">
+                            <input type="file" class="form-control shadow" name="userfile" id="userfile">
                         </div>
                     </div>
                 </div>

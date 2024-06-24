@@ -1,5 +1,5 @@
 <div class="modal fade" id="modalExcLivro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-lg shadow">
         <div class="modal-content">
             <div class="modal-header bg-light-grey justify-content-end">
                 <a href="#" class="btn-close-modal text-dark" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></a>
