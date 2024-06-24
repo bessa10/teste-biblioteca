@@ -19,14 +19,17 @@ class Home extends BaseController
 
     public function index(): string
     {
-        $livros = $this->livroModel->orderBy('titulo')->findAll();
+        $params = $this->request->getGet();
 
-        /*
-        $this->session->setFlashdata(array(
-            'msg' => 'Senha inválida',
-            'type' => 'danger'
-        ));
-        */
+        if(array_key_exists('favoritos', $params) && $params['favoritos'] == true) {
+
+            $livros = $this->livroModel
+                        ->orderBy('favorito desc, titulo')
+                        ->findAll();
+        } else {
+
+            $livros = $this->livroModel->orderBy('titulo')->findAll();
+        }
 
         return view('home', compact('livros'));
     }

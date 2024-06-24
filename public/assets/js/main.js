@@ -76,7 +76,6 @@ function detalhesLivro(id, img_existe) {
                     $("#dt_image").attr('src', base_url_sis + 'assets/img/livros.jpeg');
                 }
 
-                console.log(response);
             },
             error: function(error) {
 

@@ -2,8 +2,9 @@
 <?= $this->section('content') ?>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-2">
         <div class="col-12">
-            <div class="d-flex justify-content-end p-3">
-                <a href="" class="btn btn-lg btn-primary"><i class="fas fa-heart"></i>&nbsp;Favoritos</a>
+            <div class="d-flex justify-content-between p-3">
+                <a href="<?= site_url() ?>" class="btn btn-lg btn-primary"><i class="fas fa-home"></i>&nbsp;Home</a>
+                <a href="<?= site_url().'?favoritos=1' ?>" class="btn btn-lg btn-primary"><i class="fas fa-heart"></i>&nbsp;Favoritos</a>
             </div>
         </div>
     </div>
