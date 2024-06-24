@@ -1,0 +1,154 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.border-rounded {
+    border-radius: 10px;
+}
+
+.bg-blue {
+    background-color: #191970;
+}
+
+.bg-danger {
+    background-color: #d50000 !important;
+}
+
+.bg-success {
+    background-color: #1b5e20 !important;
+}
+
+.bg-light-grey {
+    background-color: #eeeef8;
+}
+
+.btn-primary {
+    background-color: #191970 !important;
+    border-color: #191970 !important;
+}
+
+.btn-primary:hover {
+    background-color: #0dcaf0 !important;
+    border-color: #0dcaf0 !important;
+}
+
+.btn-info:hover {
+    background-color: #191970 !important;
+    border-color: #191970 !important;
+    color: #fff
+}
+
+.btn-close-modal {
+    color: #fff;
+    font-size: 24px;
+}
+
+.btn-close-modal:hover {
+    color: #0dcaf0 !important;
+}
+
+.bl-livros {
+    border-radius: 10px;
+    background-color: #e6e6fa;
+    min-height: 50vh;
+}
+
+.card-header {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.img-card-header {
+    display: flex;
+    z-index: 1;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.borda-inferior {
+    display: flex;
+    width:100%;
+    margin-top: -25px;
+    z-index: 2;
+}
+
+.ponta { 
+    width: 20%;
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-left: 30px solid #000;
+    border-bottom: 22px solid transparent;
+}
+
+.corpo { 
+    width: 100%;
+    height: 6px;
+    background: #000; 
+    position: absolute; 
+    margin-top: 12.5px;
+}
+
+.bl-favorito {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    margin-right: 10px;
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
+
+.btn-favorito {
+    font-size: 26px;
+    color:crimson
+}
+
+.btn-favorito:hover {
+    color: #fff
+}
+
+.btn-add-livro {
+    position:fixed;
+    bottom:30px;
+    right:40px;
+    color:#FFF;
+    text-align:center;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+}
+
+.desc-livro {
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   line-height: 22px;     /* fallback */
+   max-height: 60px;      /* fallback */
+   -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+
+.bl-options {
+    display: flex;
+    justify-content: end;
+    align-content: end;
+    align-items: end;
+    min-height: 20px;
+}
+
+.mh-20 {
+    min-height: 50px;
+}
+
+.btn-option-livro {
+    font-size: 22px;
+}
+
+@media (min-width: 992px) {
+
+
+}
